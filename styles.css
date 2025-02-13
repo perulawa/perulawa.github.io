@@ -1,0 +1,14 @@
+/* Apply a sans-serif font to h1 */
+h1 {
+  font-family: sans-serif;
+}
+
+/* Apply a modern font (Roboto) to paragraphs */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Optional: Include Google Fonts for Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
