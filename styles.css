@@ -1,6 +1,7 @@
 /* Apply a sans-serif font to h1 */
 h1 {
   font-family: sans-serif;
+  text-align: center;
 }
 
 /* Apply a modern font (Roboto) to paragraphs */
@@ -8,6 +9,16 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+input {
+  display:block;
+  margin-bottom: 10px;
+}
+
+.main {
+  text-align: center;
 }
 
 /* Optional: Include Google Fonts for Roboto */
