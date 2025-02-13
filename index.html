@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>last.fm Stats</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
   </head>
   <body>
     <h1>last.fm Statistics for perulawa</h1>
+    <p class="main">View submitted songs <a href="viewsongs.html">here!</a></p>
     <p>This is a basic webpage.</p>
+    <form id="dataForm" onsubmit="event.preventDefault(); sendData();">
+      <p>
+        <label for="songName">Song Name:</label>
+        <input type="text" id="songName" name="songName"> 
+
+        <label for="albumName">Album Name:</label>
+        <input type="text" id="albumName" name="albumName">
+
+        <label for="artistName">Artist Name:</label>
+        <input type="text" id="artistName" name="artistName">
+
+        <label for="duration">Duration (in seconds):</label>
+        <input type="text" id="duration" name="duration">
+
+        <label for="genre">Genre</label>
+        <select id="genre" name="genre">
+          <option value="Hip-Hop">Hip-Hop</option>
+          <option value="Pop">Pop</option>
+          <option value="Rock">Rock</option>
+          <option value="Soundtrack">Soundtrack</option>
+        </select>
+
+      </p>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
